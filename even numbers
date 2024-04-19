@@ -1,0 +1,15 @@
+def totalevenno(l):
+    result = 0
+    n = len(l)
+    for index in range(n):
+        if l[index] %2 == 0:
+            result = result + 1
+    return result
+
+l = [12,34,21,-12,34,55,56,34,12]
+
+result = totalevenno(l)
+print("total even numbers is",result)
+
+:output:
+ 	total even numbers is 7
