@@ -1,0 +1,16 @@
+def findsmallerelement(numbers):
+    result = 100
+    n = len(numbers)
+
+    for index in range(n):
+        if numbers[index] < result:
+            result = numbers[index]
+    return result
+
+numbers = [12,34,21,34,55,34,11]
+result = findsmallerelement(numbers)
+print("smallest number is:" , result)
+
+
+
+output: smallest number is: 11
